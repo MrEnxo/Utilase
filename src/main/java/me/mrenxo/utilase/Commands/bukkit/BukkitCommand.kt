@@ -1,6 +1,6 @@
 package me.mrenxo.utilase.Commands.bukkit
 
-import io.simplyservers.simplecommand.core.*
+import me.mrenxo.utilase.Commands.core.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
