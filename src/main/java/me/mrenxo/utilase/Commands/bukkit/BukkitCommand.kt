@@ -1,9 +1,10 @@
-package io.simplyservers.simplecommand.bukkit
+package me.mrenxo.utilase.Commands.bukkit
 
 import io.simplyservers.simplecommand.core.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.mrenxo.utilase.Commands.core.*
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender

@@ -1,6 +1,6 @@
-package io.simplyservers.simplecommand.bukkit
+package me.mrenxo.utilase.Commands.bukkit
 
-import io.simplyservers.simplecommand.core.PermissionGetter
+import me.mrenxo.utilase.Commands.core.PermissionGetter
 import org.bukkit.command.CommandSender
 
 /**

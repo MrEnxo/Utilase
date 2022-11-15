@@ -1,4 +1,4 @@
-package io.simplyservers.simplecommand.core
+package me.mrenxo.utilase.Commands.core
 
 infix fun <I> ((I) -> Boolean).or(other: (I) -> Boolean) = { input: I ->
     this(input) && other(input)

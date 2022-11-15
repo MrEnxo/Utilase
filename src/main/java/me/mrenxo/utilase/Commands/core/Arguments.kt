@@ -1,4 +1,4 @@
-package io.simplyservers.simplecommand.core
+package me.mrenxo.utilase.Commands.core
 
 /**
  * An argument which is a double

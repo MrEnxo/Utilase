@@ -1,6 +1,6 @@
 package me.mrenxo.utilase
 
-import io.simplyservers.simplecommand.core.cmd
+import me.mrenxo.utilase.Commands.core.cmd
 import me.mrenxo.utilase.Formating.Formatter
 import me.mrenxo.utilase.Formating.customColorResolver
 import me.mrenxo.utilase.Formating.dashResolver

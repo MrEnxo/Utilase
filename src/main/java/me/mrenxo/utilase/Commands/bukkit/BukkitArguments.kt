@@ -1,6 +1,6 @@
-package io.simplyservers.simplecommand.bukkit
+package me.mrenxo.utilase.Commands.bukkit
 
-import io.simplyservers.simplecommand.core.SingularArg
+import me.mrenxo.utilase.Commands.core.SingularArg
 import org.bukkit.OfflinePlayer
 import org.bukkit.entity.Player
 import org.bukkit.plugin.Plugin
