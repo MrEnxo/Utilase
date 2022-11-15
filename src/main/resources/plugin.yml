@@ -1,0 +1,6 @@
+name: Utilase
+version: '${project.version}'
+main: me.mrenxo.utilase.Utilase
+api-version: 1.17
+authors: [ MrEnx0 ]
+description: UTILS
