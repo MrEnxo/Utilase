@@ -11,7 +11,7 @@ import org.bukkit.command.CommandMap
 import org.bukkit.command.PluginCommand
 import org.bukkit.plugin.java.JavaPlugin
 
-class Utilase : JavaPlugin() {
+open class Utilase : JavaPlugin() {
 
 
     override fun onEnable() {
