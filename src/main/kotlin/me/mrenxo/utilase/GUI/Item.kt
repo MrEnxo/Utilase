@@ -12,14 +12,31 @@ fun item(
     builder: Item.() -> Unit = {}
 ) = Item(type).apply(builder)
 
-class Item(
-    val type: Material
-) {
-    val stack = ItemStack(type, 1)
+
+fun item(
+    stack: ItemStack,
+    builder: Item.() -> Unit = {}
+) = Item(stack).apply(builder)
+
+
+
+class Item {
+
+    var stack: ItemStack;
+
+    constructor(type: Material) {
+        this.stack = ItemStack(type, 1)
+    }
+
+    constructor(stack: ItemStack) {
+        this.stack = stack
+    }
     val meta get() = stack.itemMeta
 
     fun stack(builder: ItemStack.() -> Unit) = stack
         .apply(builder)
+
+    fun nbt(builder: NBTItem.() -> Unit) = NBTItem(stack).apply(builder).item
 
     fun meta(builder: ItemMeta.() -> Unit) = meta
         ?.apply(builder)
@@ -31,6 +48,8 @@ class Item(
         val display = nbt.getOrCreateCompound("display")
 
         display.setString("Name", GsonComponentSerializer.gson().serialize(value))
+
+        stack = nbt.item
     }
 
 
@@ -44,6 +63,8 @@ class Item(
         lines.forEach {
             NBTlore.add(GsonComponentSerializer.gson().serialize(it))
         }
+
+        stack = nbt.item
 
     }
 

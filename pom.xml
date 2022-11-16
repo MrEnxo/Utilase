@@ -6,9 +6,7 @@
 
     <groupId>me.mrenxo</groupId>
     <artifactId>utilase</artifactId>
-    <version>1.0.0</version>
-
-
+    <version>1.0.1</version>
 
     <name>Utilase</name>
 
@@ -21,6 +19,7 @@
     </properties>
 
     <build>
+        <sourceDirectory>src/main/kotlin</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -80,23 +79,12 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <jvmTarget>1.8</jvmTarget>
-                    <compilerPlugins>
-                        <plugin>kotlinx-serialization</plugin>
-                    </compilerPlugins>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jetbrains.kotlin</groupId>
-                        <artifactId>kotlin-maven-serialization</artifactId>
-                        <version>${kotlin.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
 
         </plugins>
     </build>
+
+
 
     <repositories>
         <repository>
