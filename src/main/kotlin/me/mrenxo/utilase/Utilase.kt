@@ -1,14 +1,6 @@
 package me.mrenxo.utilase
 
-import me.mrenxo.utilase.Commands.core.cmd
-import me.mrenxo.utilase.Formating.Formatter
-import me.mrenxo.utilase.Formating.customColorResolver
-import me.mrenxo.utilase.Formating.dashResolver
-import me.mrenxo.utilase.GUI.setPlugin
-import org.bukkit.Bukkit
-import org.bukkit.command.Command
-import org.bukkit.command.CommandMap
-import org.bukkit.command.PluginCommand
+import me.mrenxo.utilase.gui.setPlugin
 import org.bukkit.plugin.java.JavaPlugin
 
 open class Utilase : JavaPlugin() {
